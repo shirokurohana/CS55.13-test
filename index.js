@@ -1,6 +1,3 @@
-console.log("Sup!");
-// this is a single-line javascript comment
-
 let myhttp = require("http");
 
 // myhttp.createrServer( );
@@ -15,9 +12,8 @@ let myserver = myhttp.createServer(
     let mytext;
     if (myrequest.url === "/hey") {
       mytext === "well hello there...";
-
-    } else {
-      mytext === "I don't know you";    }
+      } else {
+      mytext === "I don't know you";}
     mytext = mytext + " - Please help me... I am trapped in a Node.js server!"
     myresponse.writeHead( 200, {"Content-Type": "text/plain"});
     // writeHead() creates an http response header
